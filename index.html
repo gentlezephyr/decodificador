@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Codificador</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/computer-robot-cyborg.svg" type="image/x-icon">
 </head>
+
 <body>
-    <input type="text" name="" id="campoTexto">
-    <button onclick="encriptarTexto()">Encriptar</button>
-    <button onclick="desencriptarTexto()">Desencriptar</button>
-    <button onclick="copiarTexto()">Copiar</button>
-    <div class="saidaTexto"></div>
-    <img src="./41bfe5a0e89edea6d889a7ec32910bd6.jpg" alt="" width="50%" style="margin-top:20px">
-    <script src="./teste.js"></script>
+    <div id="particles-js"></div>
+
+    <main>
+
+        <div class="modal1">
+            CODIFICADO
+        </div>
+
+        <div class="modal2">
+            DECODIFICADO
+        </div>
+
+        <div class="modal3">
+            COPIADO
+        </div>
+
+        <h1>CODIFICADOR</h1>
+        <input type="text" id="campoTexto">
+        <div class="linhaBtn">
+            <button onclick="encriptarTexto()">Codificar</button>
+            <button onclick="desencriptarTexto()">Decodificar</button>
+        </div>
+        
+        <div class="segundaLinhaBtn">
+            <button onclick="copiarTexto()">Copiar</button>
+            <button onclick="limparTexto()">Limpar</button>
+        </div>
+        
+        <div class="saidaTexto"></div>
+    </main>
+
+    <script src="./assets/scripts/particles.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
 </body>
+
 </html>
